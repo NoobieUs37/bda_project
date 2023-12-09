@@ -1,0 +1,103 @@
+:root {
+	--primary-color: #0056D2;
+    --primary-opac-color: rgb(0, 87, 209, 0.9);
+	--secondary-color: rgb(0, 87, 209, 0.1);
+	--secondary-light-color: #F2F6FD;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--secondary-color);
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
+.navbar {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background: var(--primary-opac-color);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bolder;
+    box-shadow: 2px 3px 8px #bbb;
+}
+
+.nav-items {
+	display: flex;
+	align-items: center;
+}
+
+.nav-items div {
+	margin-left: 20px; 
+	padding: 8px 12px;
+	border-radius: 4px;
+	transition: font-size 0.3s ease; 
+}
+
+.nav-items div a {
+	font-size: 1rem;
+	text-decoration: none;
+    color: var(--secondary-light-color);
+}
+
+.nav-items div:hover a {
+	text-decoration: underline;
+}
+
+.nav-items a:first-child {
+	margin-left: 0; 
+}
+
+main {
+    border-top: 5px solid var(--primary-color);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    width: 23rem;
+    margin-right: 1rem; 
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+select {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+}
+
+.btn {
+    padding: 0.6rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+}

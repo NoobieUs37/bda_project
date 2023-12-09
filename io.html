@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css"
+            integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="io.css" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script defer src="io.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <h3 style="padding-left: 1rem; color: #f2f6fd">[ SPASTN ]</h3>
+                <!-- <img src="./images/Text.png" alt="Logo" /> -->
+            </div>
+            <div class="nav-items">
+                <div>
+                    <a href="./index.html">HOME</a>
+                </div>
+                <div>
+                    <a href="./about.html">ABOUT US</a>
+                </div>
+                <div style="display: flex; align-items: center">
+                    <a href="./visualization.html">VISUALIZATION</a> &nbsp;
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="16"
+                        width="18"
+                        viewBox="0 0 576 512"
+                    >
+                        <path
+                            d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z"
+                            fill="#F2F6FD"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="state">State</label><br />
+                    <select id="state">
+                        <option selected disabled value="">
+                            -- select state --
+                        </option>
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chhattisgarh</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                        <option>Andaman and Nicobar Islands</option>
+                        <option>Chandigarh</option>
+                        <option>
+                            Dadra and Nagar Haveli and Daman and Diu
+                        </option>
+                        <option>Lakshadweep</option>
+                        <option>
+                            Delhi (National Capital Territory of Delhi)
+                        </option>
+                        <option>Puducherry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="area">Area</label><br />
+                    <select id="area">
+                        <option selected disabled value="">
+                            -- select area --
+                        </option>
+                        <option>Urban</option>
+                        <option>Rural</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="disability">Disability</label><br />
+                    <select id="disability">
+                        <option selected disabled value="">
+                            -- select disability --
+                        </option>
+                        <option>In-Seeing</option>
+                        <option>In-Hearing</option>
+                        <option>In-Speech</option>
+                        <option>Mental-Retardation</option>
+                        <option>Mental-Illness</option>
+                        <option>Multiple-Disability</option>
+                        <option>Any-Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="agegroup">Age Group</label><br />
+                    <select id="agegroup">
+                        <option selected disabled value="">
+                            -- select age group --
+                        </option>
+                        <option>0-14</option>
+                        <option>15-59</option>
+                        <option>60+</option>
+                        <option>Age not stated</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn" id="predict">
+                Predict Disability &nbsp;
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    fill="currentColor"
+                    class="bi bi-graph-up-arrow"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                    />
+                </svg>
+            </button>
+        </main>
+    </body>
+</html>
